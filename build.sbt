@@ -2,7 +2,7 @@ organization := "lt.dvim.untappd"
 name := "untappd-history"
 description := "History and statistics of Untappd checkins"
 
-scalaVersion := "2.13.10"
+scalaVersion := "2.13.11"
 
 val Akka = "2.6.20"
 val Circe = "0.14.5"
