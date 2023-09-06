@@ -5,7 +5,7 @@ description := "History and statistics of Untappd checkins"
 scalaVersion := "2.13.10"
 
 val Akka = "2.6.20"
-val Circe = "0.14.5"
+val Circe = "0.14.6"
 
 libraryDependencies ++= Seq(
   "is.cir"              %% "ciris-core"             % "0.13.0-RC1",
@@ -18,8 +18,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka"   %% "akka-http"              % "10.2.10",
   "de.heikoseeberger"   %% "akka-http-circe"        % "1.39.2",
   "ch.megard"           %% "akka-http-cors"         % "1.2.0",
-  "ch.qos.logback"       % "logback-classic"        % "1.4.8",
-  "com.google.cloud"     % "google-cloud-firestore" % "3.13.2"
+  "ch.qos.logback"       % "logback-classic"        % "1.4.11",
+  "com.google.cloud"     % "google-cloud-firestore" % "3.14.1"
 )
 
 enablePlugins(JavaAppPackaging)
