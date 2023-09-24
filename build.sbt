@@ -5,21 +5,21 @@ description := "History and statistics of Untappd checkins"
 scalaVersion := "2.13.10"
 
 val Akka = "2.6.20"
-val Circe = "0.14.4"
+val Circe = "0.14.6"
 
 libraryDependencies ++= Seq(
   "is.cir"              %% "ciris-core"             % "0.13.0-RC1",
   "lt.dvim.ciris-hocon" %% "ciris-hocon"            % "0.2.1",
-  "io.circe"            %% "circe-optics"           % "0.14.1",
+  "io.circe"            %% "circe-optics"           % "0.15.0",
   "io.circe"            %% "circe-parser"           % Circe,
   "io.circe"            %% "circe-generic"          % Circe,
   "com.typesafe.akka"   %% "akka-stream"            % Akka,
   "com.typesafe.akka"   %% "akka-slf4j"             % Akka,
   "com.typesafe.akka"   %% "akka-http"              % "10.2.10",
   "de.heikoseeberger"   %% "akka-http-circe"        % "1.39.2",
-  "ch.megard"           %% "akka-http-cors"         % "1.1.3",
-  "ch.qos.logback"       % "logback-classic"        % "1.4.5",
-  "com.google.cloud"     % "google-cloud-firestore" % "3.7.10"
+  "ch.megard"           %% "akka-http-cors"         % "1.2.0",
+  "ch.qos.logback"       % "logback-classic"        % "1.4.11",
+  "com.google.cloud"     % "google-cloud-firestore" % "3.14.3"
 )
 
 enablePlugins(JavaAppPackaging)
